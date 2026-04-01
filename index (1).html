@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A pure HTML learning project that demonstrates semantic structure, page organization, and layout simulation without CSS.">
+  <title>Understanding HTML Structure - Learning Project</title>
+</head>
+<body>
+  <header>
+    <h1>Understanding HTML Structure</h1>
+    <p>This web document demonstrates how a complete page can be organized using HTML alone.</p>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#anatomy">Page Anatomy</a></li>
+        <li><a href="#layout">Layout Simulation</a></li>
+        <li><a href="#elements">Element Guide</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section id="purpose">
+      <h2>1. Purpose of the Web Document</h2>
+      <p>
+        The goal of this page is to show that HTML is not only a language for displaying text, but also a way of giving
+        meaning, order, and hierarchy to information. Instead of decorating the page with style sheets, this document uses
+        semantic tags, headings, lists, tables, and forms to show how structure works.
+      </p>
+      <article>
+        <h3>What this page proves</h3>
+        <ol>
+          <li>Content can be grouped into meaningful sections.</li>
+          <li>A reader can understand the document outline by scanning headings.</li>
+          <li>Page areas such as navigation, main content, and supporting details can be separated with semantic elements.</li>
+          <li>Even layout ideas can be simulated with native HTML elements when CSS is not used.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="anatomy">
+      <h2>2. Page Anatomy</h2>
+      <p>The following table summarizes the role of the major structural parts used in this document.</p>
+      <table border="1">
+        <caption>Core HTML Structure Used in This Page</caption>
+        <thead>
+          <tr>
+            <th scope="col">Element</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">How It Helps the Reader</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">header</th>
+            <td>Introduces the page title and opening context.</td>
+            <td>Lets the reader know what the document is about immediately.</td>
+          </tr>
+          <tr>
+            <th scope="row">nav</th>
+            <td>Provides links to major parts of the page.</td>
+            <td>Makes movement through the document easier.</td>
+          </tr>
+          <tr>
+            <th scope="row">main</th>
+            <td>Contains the primary learning content.</td>
+            <td>Separates the most important content from repeated or supporting content.</td>
+          </tr>
+          <tr>
+            <th scope="row">section</th>
+            <td>Groups related ideas into organized blocks.</td>
+            <td>Creates logical chapters inside one page.</td>
+          </tr>
+          <tr>
+            <th scope="row">article</th>
+            <td>Holds a self-contained idea or explanation.</td>
+            <td>Allows one concept to stand on its own within a larger section.</td>
+          </tr>
+          <tr>
+            <th scope="row">aside</th>
+            <td>Contains extra supporting notes.</td>
+            <td>Adds useful side information without interrupting the main flow.</td>
+          </tr>
+          <tr>
+            <th scope="row">footer</th>
+            <td>Closes the page with summary details.</td>
+            <td>Provides a clear ending and final context.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="layout">
+      <h2>3. Simulating Layout Using Only HTML</h2>
+      <p>
+        Without CSS, layout can still be suggested by the order of elements and by using tables in a careful, meaningful way.
+        The table below acts like a simple two-column page plan: the left side represents the main flow of content and the right
+        side represents supporting material.
+      </p>
+      <table border="1">
+        <caption>Simple Two-Column Layout Simulation</caption>
+        <tr>
+          <th scope="col">Main Reading Area</th>
+          <th scope="col">Support Area</th>
+        </tr>
+        <tr>
+          <td>
+            <article>
+              <h3>Why semantic flow matters</h3>
+              <p>
+                Readers and screen tools rely on structure. When headings descend in a clear order and related ideas stay grouped,
+                the document becomes easier to follow, summarize, and navigate.
+              </p>
+            </article>
+          </td>
+          <td>
+            <aside>
+              <h3>Support note</h3>
+              <p>
+                This side area is not separate because of design styling. It is separate because the content has a supporting role.
+              </p>
+            </aside>
+          </td>
+        </tr>
+      </table>
+      <p>
+        In a real production website, CSS would control visual placement. In this learning task, the point is to understand that
+        structure comes first and visual style comes second.
+      </p>
+    </section>
+
+    <section id="elements">
+      <h2>4. Element Guide</h2>
+      <article>
+        <h3>4.1 Text and hierarchy</h3>
+        <p>Headings create the outline of the document. Paragraphs explain each point in full sentences.</p>
+        <dl>
+          <dt>h1</dt>
+          <dd>The main title of the whole page.</dd>
+          <dt>h2</dt>
+          <dd>Main sections of the page.</dd>
+          <dt>h3</dt>
+          <dd>Subtopics within each section.</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h3>4.2 Lists for relationships</h3>
+        <p>Lists are useful when information has sequence, grouping, or categories.</p>
+        <ul>
+          <li>Use unordered lists for collections.</li>
+          <li>Use ordered lists when steps must follow a sequence.</li>
+          <li>Use description lists when defining terms.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>4.3 Forms as structured input areas</h3>
+        <p>The form below is included to demonstrate how HTML can organize interaction as well as reading.</p>
+        <form>
+          <fieldset>
+            <legend>Reader Check-In</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input id="name" name="name" type="text">
+            </p>
+            <p>
+              <label for="topic">Most useful section:</label>
+              <select id="topic" name="topic">
+                <option>Purpose</option>
+                <option>Page Anatomy</option>
+                <option>Layout Simulation</option>
+                <option>Element Guide</option>
+              </select>
+            </p>
+            <p>
+              <label for="comment">What did you learn?</label><br>
+              <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit Reflection</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+
+    <section id="reflection">
+      <h2>5. Reflection on the Build</h2>
+      <p>
+        This page was built to emphasize understanding rather than decoration. Every major block exists because it plays a role
+        in the document structure. The page shows that HTML can express introduction, navigation, explanation, side notes,
+        summary, and even a simple interaction area. The most important lesson is that a good web document is organized before
+        it is styled.
+      </p>
+      <blockquote>
+        <p>
+          HTML answers the question, "What is this piece of content?" before design answers the question, "How should it look?"
+        </p>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><strong>Document type:</strong> Single-page educational HTML document</p>
+    <p><strong>Built with:</strong> Pure HTML5 structure only</p>
+    <p><strong>Main concept demonstrated:</strong> Semantic organization before styling</p>
+  </footer>
+</body>
+</html>
