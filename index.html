@@ -8,57 +8,160 @@
 <body>
     <header>
         <h1>KCA University</h1>
-        <p>Welcome to KCA University. Please fill in the registration form below.</p>
+        <p>A simple web document showing HTML structure, semantic elements, and a basic student registration page.</p>
     </header>
 
+    <nav>
+        <p>
+            <a href="#about">About</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#registration">Registration Form</a> |
+            <a href="#contact">Contact</a>
+        </p>
+    </nav>
+
     <main>
+        <section id="about">
+            <h2>About This Page</h2>
+            <p>
+                This page is designed to demonstrate understanding of HTML document structure.
+                It uses semantic elements such as header, nav, main, section, article, aside, and footer.
+            </p>
+        </section>
+
         <section>
+            <h2>Page Layout</h2>
+
+            <article>
+                <h3>Student Information Area</h3>
+                <p>
+                    This part of the page contains the main registration content and form elements.
+                    It is the central purpose of the document.
+                </p>
+            </article>
+
+            <aside>
+                <h3>Quick Notes</h3>
+                <ul>
+                    <li>Fill in your full name clearly.</li>
+                    <li>Select one gender option.</li>
+                    <li>Choose your course and campus.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <ol>
+                <li>BSCIT</li>
+                <li>DIT</li>
+                <li>BCOM</li>
+                <li>DHTM</li>
+                <li>DBIT</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Course and Campus Summary</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Campus Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BSCIT</td>
+                        <td>Nairobi Campus</td>
+                    </tr>
+                    <tr>
+                        <td>DIT</td>
+                        <td>Western Campus</td>
+                    </tr>
+                    <tr>
+                        <td>BCOM</td>
+                        <td>Kitengela Campus</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registration">
             <h2>Student Registration Form</h2>
 
             <form>
-                <p>
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname">
-                </p>
+                <fieldset>
+                    <legend>Personal Details</legend>
 
-                <p>Gender:</p>
-                <p>
-                    <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male">Male</label><br>
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname">
+                    </p>
 
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label>
-                </p>
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email">
+                    </p>
+
+                    <p>Gender:</p>
+                    <p>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Details</legend>
+
+                    <p>
+                        <label for="course">Select Course:</label><br>
+                        <select id="course" name="course">
+                            <option>BSCIT</option>
+                            <option>DIT</option>
+                            <option>BCOM</option>
+                            <option>DHTM</option>
+                            <option>DBIT</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="campus">Select Campus:</label><br>
+                        <select id="campus" name="campus">
+                            <option>KCA Nairobi Campus</option>
+                            <option>KCA Western Campus</option>
+                            <option>KCA Kitengela Campus</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+                    </p>
+                </fieldset>
 
                 <p>
-                    <label for="course">Select Course:</label><br>
-                    <select id="course" name="course">
-                        <option>BSCIT</option>
-                        <option>DIT</option>
-                        <option>BCOM</option>
-                        <option>DHTM</option>
-                        <option>DBIT</option>
-                    </select>
-                </p>
-
-                <p>
-                    <label for="campus">Select Campus:</label><br>
-                    <select id="campus" name="campus">
-                        <option>KCA Nairobi Campus</option>
-                        <option>KCA Western Campus</option>
-                        <option>KCA Kitengela Campus</option>
-                    </select>
-                </p>
-
-                <p>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit Registration">
                 </p>
             </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <address>
+                KCA University<br>
+                Nairobi, Kenya<br>
+                Email: info@kca.ac.ke
+            </address>
         </section>
     </main>
 
     <footer>
-        <p>Simple HTML practice page demonstrating structure and form elements.</p>
+        <p>Created as a simple HTML learning project to demonstrate web document structure and semantic HTML elements.</p>
+        <p>Hosted on GitHub Pages.</p>
     </footer>
 </body>
 </html>
