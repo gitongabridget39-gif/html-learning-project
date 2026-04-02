@@ -8,6 +8,3 @@ The page demonstrates:
 - headings and paragraphs
 - a simple registration form
 - semantic elements such as `header`, `main`, `section`, and `footer`
-
-## Hosted Website
-This project is published using GitHub Pages.
