@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCA University Registration</title>
+</head>
+<body>
+    <header>
+        <h1>KCA University</h1>
+        <p>Welcome to KCA University. Please fill in the registration form below.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Student Registration Form</h2>
+
+            <form>
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname">
+                </p>
+
+                <p>Gender:</p>
+                <p>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </p>
+
+                <p>
+                    <label for="course">Select Course:</label><br>
+                    <select id="course" name="course">
+                        <option>BSCIT</option>
+                        <option>DIT</option>
+                        <option>BCOM</option>
+                        <option>DHTM</option>
+                        <option>DBIT</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="campus">Select Campus:</label><br>
+                    <select id="campus" name="campus">
+                        <option>KCA Nairobi Campus</option>
+                        <option>KCA Western Campus</option>
+                        <option>KCA Kitengela Campus</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Simple HTML practice page demonstrating structure and form elements.</p>
+    </footer>
+</body>
+</html>
